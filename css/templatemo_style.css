@@ -32,7 +32,7 @@ p {
 
 .heading-section {
   text-align: center;
-  padding: 100px 0 80px 0;
+  padding: 0px 0 50px 0;
 }
 
 .heading-section h2 {
@@ -109,7 +109,7 @@ p {
 
 .search-box {
   text-align: right;
-  margin-top: 33px;
+  margin-top: 5px;
   position: relative;
 }
 
@@ -150,6 +150,7 @@ p {
 #heading {
   background-image: url(../images/bg-image.jpg);
   height: 140px;
+  margin-top: 90px;
 }
 
 #heading h2 {
@@ -596,7 +597,7 @@ p {
 }
 
 input, textarea {
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #e2e2e2;
   width: 100%;
   margin-top: 25px;
@@ -627,24 +628,7 @@ textarea {
   height: 35px;
   line-height: 30px;
   text-align: center;
-  background-color: #45b820; 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: 0;
-  outline: none;
-}
-
-.send button:hover {
-  width: 90px;
-  color: #fff;
-  cursor: pointer;
-  height: 35px;
-  line-height: 30px;
-  text-align: center;
-  background-color: #4dce24; 
+  background-color: #f78e21; 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -686,7 +670,7 @@ textarea {
 }
 
 .send {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .info p {
@@ -985,8 +969,8 @@ textarea {
 
 footer {
   background-color: #f3f3f3;
-  border-top: 4px solid #45b820;
-  margin-top: 180px;
+  border-top: 4px solid #f78e21;
+  margin-top: 120px;
 }
 
 .social-bottom {
@@ -1371,4 +1355,50 @@ footer {
   }
 }
 
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 20px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 5px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
 /*--- END RESPONSIVE ---*/
