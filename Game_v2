@@ -91,7 +91,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#page-top">Cool Blood</a>
+                        <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -132,8 +132,8 @@ http://www.templatemo.com/preview/templatemo_417_grill
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-content">
-                                <h2>Quiz</h2>
-                                <span>Home / <a href="Game_v2.html">Quiz</a></span>
+                                <h2>Contact Us</h2>
+                                <span>Home / <a href="contact-us.html">Contact Us</a></span>
                             </div>
                         </div>
                     </div>
@@ -155,67 +155,68 @@ http://www.templatemo.com/preview/templatemo_417_grill
                         <div class="container">
                             <div class="row">
                                 <fieldset class="row col-md-offset-2 col-md-8">
-                                    <div class="row" style="background-color:#F3F3F3">  
-                                        <div>
-                                            <h4>&nbsp;&nbsp;&nbsp;คุณรู้สึกอย่างไร เมื่อโดนตอบกลับว่า "อืม" ในไลน์</h4>
-                                        </div>
-                                    </div><br>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
-                                            <input type="radio" name="choice1" value="a">   
-                                        </div>
-                                        <div class="col-md-11">
-                                            จี๊ดเลย                                  
-                                        </div>                              
-                                    </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
-                                            <input type="radio" name="choice1" value="a">   
-                                        </div>
-                                        <div class="col-md-11">
-                                            น้อยใจ                                  
-                                        </div>                              
-                                    </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
-                                            <input type="radio" name="choice1" value="a">   
-                                        </div>
-                                        <div class="col-md-11">
-                                            เกลียดมาก                                  
-                                        </div>                              
-                                    </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
-                                            <input type="radio" name="choice1" value="a">   
-                                        </div>
-                                        <div class="col-md-11">
-                                            หงุดหงิด                                  
-                                        </div>                              
-                                    </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
-                                            <input type="radio" name="choice1" value="a">   
-                                        </div>
-                                        <div class="col-md-11">
-                                            เฉยๆ                                  
-                                        </div>                              
-<<<<<<< HEAD
-                                    </div>                      
-=======
-                                    </div>                       
->>>>>>> origin/MEN3F
-                                </fieldset>
-                                <div class="row col-md-12">
-                                    <div class="col-md-offset-4 col-md-3">
-                                        <input type="text">
-                                    </div>
-                                    <div class="send col-md-2">
-                                        <button type="submit">ส่งคำตอบ</button>
-                                    </div>
+                            <div class="row" style="background-color:#F3F3F3">  
+                                <div>
+                                    <h4>&nbsp;&nbsp;&nbsp;คุณรู้สึกอย่างไร เมื่อโดนตอบกลับว่า "อืม" ในไลน์</h4>
                                 </div>
+                            </div><br>
+                            <div class="row col-md-12">
+                                <div class="row col-md-1">
+                                    <input type="radio" name="choice1" value="a">   
+                                </div>
+                                <div class="col-md-11">
+                                    จี๊ดเลย                                  
+                                </div>                              
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="row col-md-1">
+                                    <input type="radio" name="choice1" value="a">   
+                                </div>
+                                <div class="col-md-11">
+                                    น้อยใจ                                  
+                                </div>                              
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="row col-md-1">
+                                    <input type="radio" name="choice1" value="a">   
+                                </div>
+                                <div class="col-md-11">
+                                    เกลียดมาก                                  
+                                </div>                              
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="row col-md-1">
+                                    <input type="radio" name="choice1" value="a">   
+                                </div>
+                                <div class="col-md-11">
+                                    หงุดหงิด                                  
+                                </div>                              
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="row col-md-1">
+                                    <input type="radio" name="choice1" value="a">   
+                                </div>
+                                <div class="col-md-11">
+                                    เฉยๆ                                  
+                                </div>                              
+                            </div>                       
+                        </fieldset>
                             </div>
                         </div>
-                    </div>   
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>Find Us On Map</h2>
+                                <img src="images/under-heading.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="googleMap" style="height:420px;"></div>
+                        </div>
+                    </div>     
                 </div>
             </div>
 
