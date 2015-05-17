@@ -149,11 +149,7 @@ p {
 
 #heading {
   background-image: url(../images/bg-image.jpg);
-<<<<<<< HEAD
-  height: 140px;
-=======
   height: 105px;
->>>>>>> origin/MEN3F
   margin-top: 90px;
 }
 
@@ -171,6 +167,7 @@ p {
 
 .heading-content {
   text-align: center;
+  margin-top: 35px;
 }
 
 /*-- End Heading --*/
@@ -600,7 +597,7 @@ p {
 }
 
 input, textarea {
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #e2e2e2;
   width: 100%;
   margin-top: 25px;
@@ -631,7 +628,24 @@ textarea {
   height: 35px;
   line-height: 30px;
   text-align: center;
-  background-color: #f78e21; 
+  background-color: #45b820; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  outline: none;
+}
+
+.send button:hover {
+  width: 90px;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #4dce24; 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -673,7 +687,7 @@ textarea {
 }
 
 .send {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .info p {
@@ -972,8 +986,8 @@ textarea {
 
 footer {
   background-color: #f3f3f3;
-  border-top: 4px solid #f78e21;
-  margin-top: 120px;
+  border-top: 4px solid #45b820;
+  margin-top: 180px;
 }
 
 .social-bottom {
