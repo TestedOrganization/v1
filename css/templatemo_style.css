@@ -149,7 +149,7 @@ p {
 
 #heading {
   background-image: url(../images/bg-image.jpg);
-  height: 140px;
+  height: 105px;
   margin-top: 90px;
 }
 
@@ -167,7 +167,6 @@ p {
 
 .heading-content {
   text-align: center;
-  margin-top: 35px;
 }
 
 /*-- End Heading --*/
