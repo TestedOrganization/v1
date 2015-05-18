@@ -38,6 +38,21 @@ $(document).ready(function() {
 
   });
 
+  var searchToggle = false;
+  $("#search").hide();
+  $("#search-button").click(function () {
+      if (searchToggle) {
+          searchToggle = false;
+          $("#search").hide(500);
+      }
+      else{
+          searchToggle = true;
+          $("#search").show(500);
+      }
+  });
+  
+  
+
 
 });
 
