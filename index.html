@@ -115,8 +115,9 @@ http://www.templatemo.com/preview/templatemo_417_grill
                             <li>
                                 <div class="search-box">
                                     <form name="search_form" method="get" class="search_form">
-                                        <input id="search" type="text" />
+                                        <input id="search" type="search" placeholder="search" onkeyup="showResult(this.value)"/>
                                         <input type="submit" id="search-button" />
+                                        <div id="livesearch"></div>
                                     </form>
                                 </div>
                             </li>
