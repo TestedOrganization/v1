@@ -115,10 +115,13 @@ http://www.templatemo.com/preview/templatemo_417_grill
                             <li>
                                 <div class="search-box">
                                     <form name="search_form" method="get" class="search_form">
-                                        <input id="search" type="text" />
-                                        <input type="submit" id="search-button" />
+                                        <input id="search" type="search" placeholder="search" onkeyup="showResult(this.value)" style="display:none"/>
+                                        <div id="livesearch"></div>   
                                     </form>
                                 </div>
+                            </li>
+                            <li>
+                                <a href="#" id="search-button"><i class="fa fa-lg fa-search"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -154,54 +157,55 @@ http://www.templatemo.com/preview/templatemo_417_grill
                     <div id="contact-us">
                         <div class="container">
                             <div class="row">
-                                <fieldset class="row col-md-offset-2 col-md-8">
+                                <fieldset class="row col-md-8 col-md-offset-2  col-sm-10 col-sm-offset-1 col-xs-10 col-xs-10 col-xs-offset-1">
                                     <div class="row" style="background-color:#F3F3F3">  
                                         <div>
                                             <h4>&nbsp;1.&nbsp;&nbsp;คุณรู้สึกอย่างไร เมื่อโดนตอบกลับว่า "อืม" ในไลน์</h4>
                                         </div>
                                     </div><br>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
+
+                                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row col-md-1 col-sm-1 col-xs-3">
                                             <input id="answer-A1" type="radio" value="Mw==" name="answer[1]" data-answer="1" data-q="1">   
                                         </div>
-                                        <div class="col-md-11">
-                                            <label for="answer-A1">จี๊ดเลย</label>                                  
+                                        <div class="col-md-11 col-sm-10 col-xs-9">
+                                                 <label for="answer-A1">จี๊ดเลย</label>                           
                                         </div>                              
                                     </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
+                                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row col-md-1 col-sm-1 col-xs-2">
                                             <input id="answer-A2" type="radio" value="Mw==" name="answer[1]" data-answer="2" data-q="1">   
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-md-11 col-sm-10 col-xs-10">
                                             <label for="answer-A2">น้อยใจ</label>                                  
                                         </div>                              
                                     </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
+                                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row col-md-1 col-sm-1 col-xs-2">
                                             <input id="answer-A3" type="radio" value="Mw==" name="answer[1]" data-answer="3" data-q="1">    
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-md-11 col-sm-10 col-xs-10">
                                             <label for="answer-A3">กลียดมาก</label>                                  
                                         </div>                              
                                     </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
+                                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row col-md-1 col-sm-1 col-xs-2">
                                             <input id="answer-A4" type="radio" value="Mw==" name="answer[1]" data-answer="4" data-q="1">   
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-md-11 col-sm-10 col-xs-10">
                                             <label for="answer-A4">หงุดหงิด</label>                                  
                                         </div>                              
                                     </div>
-                                    <div class="row col-md-12">
-                                        <div class="row col-md-1">
+                                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                                        <div class="row col-md-1 col-sm-1 col-xs-2">
                                             <input id="answer-A5" type="radio" value="Mw==" name="answer[1]" data-answer="5" data-q="1">    
                                         </div>
-                                        <div class="col-md-11">
+                                        <div class="col-md-11 col-sm-10 col-xs-10">
                                             <label for="answer-A5">เฉยๆ</label>
                                         </div>
                                     </div>                       
                                 </fieldset>
-                                <fieldset class="row col-md-offset-2 col-md-8">
+                                <!--<fieldset class="row col-md-offset-2 col-md-8">
                                     <div class="row" style="background-color:#F3F3F3">  
                                         <div>
                                             <h4>&nbsp;2.&nbsp;&nbsp;คุณรู้สึกอย่างไร เมื่อโดนตอบกลับว่า "อืม" ในไลน์</h4>
@@ -247,7 +251,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                             <label for="answer-B5">เฉยๆ</label>
                                         </div>
                                     </div>                       
-                                </fieldset>
+                                </fieldset>-->
                                 <div class="row col-md-12">
                                     <div class="col-md-offset-4 col-md-3">
                                         <input type="text">

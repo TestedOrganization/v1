@@ -38,8 +38,8 @@ $(document).ready(function() {
 
   });
 
+  //SearchboxToggle
   var searchToggle = false;
-  $("#search").hide();
   $("#search-button").click(function () {
       if (searchToggle) {
           searchToggle = false;
