@@ -978,7 +978,65 @@ textarea {
 
 /*-- End Testimonails --*/
 
+/*Quiz Manu*/
+#Quiz .Quiz-item {
+    right: 0;
+    margin: 0 0 15px;
+    width: 20%;
+}
 
+#Quiz .Quiz-item .Quiz-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#Quiz .Quiz-item .Quiz-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#Quiz .Quiz-item .Quiz-link .caption:hover {
+    opacity: 1;
+}
+
+#Quiz .Quiz-item .Quiz-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#Quiz .Quiz-item .Quiz-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#Quiz .Quiz-item .Quiz-link .caption .caption-content h3,
+#Quiz .Quiz-item .Quiz-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#Quiz * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #Quiz .Quiz-item {
+        margin: 0 0 30px;
+    }
+}
+/*End Quiz Manu*/
 
 
 
