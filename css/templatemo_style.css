@@ -367,6 +367,17 @@ p {
   transition: all 0.3s ease-in;
 }
 
+.labellogin{
+  font-weight:normal;
+  font-size: 12px;
+}
+
+.labellogin:hover{
+  font-weight:normal;
+  font-size: 12px;
+  color: orange;
+}
+
 .label-text a {
   color: #333;
 }

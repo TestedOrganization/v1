@@ -18,6 +18,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-social.css">
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/templatemo_style.css">
         <link rel="stylesheet" href="css/templatemo_misc.css">
@@ -113,7 +114,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
                                 <a href="contact-us.html">ติดต่อเรา</a>
                             </li>
                             <li class="page-scroll"> 
-                                <a id="signin-button" data-toggle="modal" data-target="#myModal">Sign in</a>                            
+                                <a id="signin-button" data-toggle="modal" data-target="#myModal">เข้าสู่ระบบ</a>                            
                             </li>
                             <li>
                                 <div class="search-box">
@@ -397,16 +398,42 @@ http://www.templatemo.com/preview/templatemo_417_grill
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+                            <h4 class="modal-title" id="myModalLabel">เข้าสู่ระบบ</h4>
                         </div>
                         <div class="modal-body">
-                            <input id="username" type="text" placeholder="Username">
-                            <input id="password" type="password" placeholder="Password" size="20">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Sign in</button>
-                        </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <input id="username" type="text" placeholder="Username or Email" style="margin-top:0;">
+                                </div>
+                                <div class="row">
+                                    <input id="password" type="password" placeholder="Password" style="margin-top:5px;">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 col-sm-1 col-xs-1" style="padding:0;">
+                                        <input id="keepUser" type="checkbox"/>
+                                    </div>
+                                    <div class="col-md-5 col-sm-5 col-xs-7" style="padding:0;">
+                                        <label for="keepUser" class="labellogin">จำฉันไว้ในระบบ</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-4" style="padding:0;">
+                                        <label class="labellogin">ลืมรหัสผ่าน</label>|<label class="labellogin">สมัครสมาชิก</label>
+                                    </div>
+                                </div>
+                                <div class="row">                                    
+                                    <button type="button" class="btn btn-primary btn-md btn-block">เข้าสู่ระบบ</button>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-2 col-xs-offset-5">
+                                        <label style="margin-top: 5px;">Or</label>
+                                    </div>
+                                </div>
+                                <div class="row">                                    
+                                    <a class="btn btn-block btn-social btn-facebook">
+                                        <i class="fa fa-facebook"></i> เข้าสู่ระบบด้วย Facebook
+                                    </a>                                   
+                                </div>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
