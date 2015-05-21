@@ -8,13 +8,14 @@ $( document ).ready(function() {
 			appId      : '902328696492143',
 			status     : true, // check login status
 			cookie     : true, // enable cookies to allow the server to access the session
-			xfbml      : true  // parse XFBML
+			xfbml      : true,  // parse XFBML
+			oauth	: true
 		});
 	}
 	function logIn() {
 		
 	  	FB.login(
-	        function(response) {
+	        function (response) {
 				if (response.status== 'connected') {
 					FB.api('/me', function (response) {
 				    	console.log(response);
@@ -36,19 +37,26 @@ $( document ).ready(function() {
 				      	}
 				    });
 
-				    FB.api({
-    					method: 'fql.query',
-    					query: 'SELECT uid, name FROM user WHERE uid = 895007193871164'
-					}, function (data) {
-    						console.log('fql::',data);
-    						var res = data[0].name;
-    						alert(res);
-    					}
-					);
+				    
+    				FB.api('/me/friends', { fields: 'id, name', limit: 3 }, 
+    					function (mydata) {
+        					var output="<ul>";
+        					var fri = mydata.data;
+        					alert(fri.length);
+        					for (var i in mydata.data) {
+            					output+="<li>NAMA : " + mydata.data[i].name + "<br/>ID : " + mydata.data[i].id + "</li>";
+        					}
+
+        				output+="</ul>";
+        				document.getElementById("conver").innerHTML=output; 
+        				//alert(mydata.data[0].name + "ID : " + mydata.data[0].id);
+					});
+				  	
 				}
 			}
 		);
 	}
+
 
 	function logOut() {
 		FB.logout(function(response) {
