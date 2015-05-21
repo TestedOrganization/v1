@@ -16,36 +16,37 @@ $( document ).ready(function() {
 	  	FB.login(
 	        function(response) {
 				if (response.status== 'connected') {debugger;
-					FB.api('/uid', function(response) {
+					FB.api('/me', function (response) {
 				    	console.log(response);
 				      	console.log('Good to see you, ' + response.name + '.');
+				      	$('#userInfo').html(response.name);
 				      	$('#loginBtn').hide();
 				      	$('#logoutBtn').show();
 						$('#userDetails').show();
-						$('#userInfo').html(response.name + '<br>' + response.location.name);
+						//$('#userInfo').html(response.name + '<br>' + response.location.name);
 						
 
 				    });
 
-				    FB.api("/uid/picture?width=200&redirect=0&type=normal&height=200", function (response) {
+				    FB.api("/me/picture?width=200&redirect=0&type=normal&height=200", function (response) {
 				      	if (response && !response.error) {
 				        	/* handle the result */
 				        	console.log('PIC ::', response);
 				        	$('#userPic').attr('src', response.data.url);
-				        	alert(response.name);
+				        	
 				      	}
 				    });
 
-				    FB.api("me/{conversation-id}",
-				    	function(response) {
+				    /*FB.api("me/{conversation-id}",
+				    	function (response) {
       						if (response && !response.error) {
-        						/* handle the result */
+        						/* handle the result 
         						console.log('conversa ::', response);
         						$('#conversa').attr('src', response.data.url);
 
       						}
     					}
-					);
+					);*/
 				}
 			}
 		);
