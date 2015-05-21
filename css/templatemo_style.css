@@ -148,7 +148,8 @@ p {
 /*-- Heading --*/
 
 #heading {
-  background-image: url(../images/bg-image.jpg);
+ /* background-image: url(../images/bg-image.jpg);*/
+ /*background-color: #000;*/
   height:90px;
   margin-top: 90px;
 }
@@ -156,13 +157,13 @@ p {
 #heading h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   margin-top: 10px;
 }
 
 #heading span {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -171,7 +172,30 @@ p {
 }
 
 /*-- End Heading --*/
+.navbar-text-head{
+  color: #fff;
+}
+.navbar-color-gr{
+  /*background-color: #3b941e;*/
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #2CD12C 0%, #138C38 100%);
 
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #2CD12C 0%, #138C38 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #2CD12C 0%, #138C38 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2CD12C), color-stop(1, #138C38));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #2CD12C 0%, #138C38 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #2CD12C 0%, #138C38 100%);
+ border-bottom: #15993D;
+}
 
 
 
