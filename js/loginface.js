@@ -15,7 +15,7 @@ $( document ).ready(function() {
 		
 	  	FB.login(
 	        function(response) {
-				if (response.status== 'connected') {debugger;
+				if (response.status== 'connected') {
 					FB.api('/me', function (response) {
 				    	console.log(response);
 				      	console.log('Good to see you, ' + response.name + '.');
@@ -33,20 +33,18 @@ $( document ).ready(function() {
 				        	/* handle the result */
 				        	console.log('PIC ::', response);
 				        	$('#userPic').attr('src', response.data.url);
-				        	
 				      	}
 				    });
 
-				    /*FB.api("me/{conversation-id}",
-				    	function (response) {
-      						if (response && !response.error) {
-        						/* handle the result 
-        						console.log('conversa ::', response);
-        						$('#conversa').attr('src', response.data.url);
-
-      						}
+				    FB.api({
+    					method: 'fql.query',
+    					query: 'SELECT uid, name FROM user WHERE uid = 895007193871164'
+					}, function (data) {
+    						console.log('fql::',data);
+    						var res = data[0].name;
+    						alert(res);
     					}
-					);*/
+					);
 				}
 			}
 		);
@@ -62,4 +60,16 @@ $( document ).ready(function() {
 		});
 	}
 
+	(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+  				js = d.createElement(s); js.id = id;
+  				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=902328696492143";
+  				fjs.parentNode.insertBefore(js, fjs);
+		}
+		(document, 'script', 'facebook-jssdk')
+	);
+
+
 	fbAsyncInit();
+	

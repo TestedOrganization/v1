@@ -108,10 +108,6 @@ http://www.templatemo.com/preview/templatemo_417_grill
                 </div>
             </div>
 
-<!--<button id="loginBtn" onclick="logIn();" value="Login">Login</button>
-<button id="logoutBtn" onclick="logOut();" value="Logout">Logout</button>-->
-
-
             <div id="product-post">
                 <div class="container">
                     <div class="row">
@@ -126,16 +122,23 @@ http://www.templatemo.com/preview/templatemo_417_grill
                         <div class="container">                           
                             <div class="row">                                    
                                 <div class="col-md-2 col-md-offset-5">
-                                    <a id="loginBtn" class="btn btn-block btn-social btn-facebook" onclick="logIn();" value="Login">
+                                    <a id="loginBtn" class="btn btn-block btn-social btn-facebook" onclick="logIn(); waitingDialog.show();setTimeout(function () {waitingDialog.hide();}, 1000);"value="Login">
                                         <i class="fa fa-facebook"></i> เริ่มเล่นเกมส์
                                     </a> 
-                                    </div>
-                                        <label id="conver" value="">
+                                    <div id="conver"></div>
                                     <div>
                                 </div>
                             </div>
                         </div>
                     </div>   
+                </div>
+            </div>
+
+            <div class="fb-page" data-href="https://www.facebook.com/ReadSabuy?__mref=message_bubble" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/ReadSabuy?__mref=message_bubble">
+                        <a href="https://www.facebook.com/ReadSabuy?__mref=message_bubble">ReadSabuy</a>
+                    </blockquote>
                 </div>
             </div>
 
@@ -216,7 +219,7 @@ http://www.templatemo.com/preview/templatemo_417_grill
             </div>
 
 
-
+        
             
         <script src="js/vendor/jquery-1.11.0.min.js"></script>    
         <script src="js/vendor/jquery.gmap3.min.js"></script>
