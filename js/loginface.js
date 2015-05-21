@@ -16,7 +16,7 @@ $( document ).ready(function() {
 	  	FB.login(
 	        function(response) {
 				if (response.status== 'connected') {debugger;
-					FB.api('/uid', function(response) {
+					FB.api('/me', function(response) {
 				    	console.log(response);
 				      	console.log('Good to see you, ' + response.name + '.');
 				      	$('#loginBtn').hide();
@@ -27,12 +27,12 @@ $( document ).ready(function() {
 
 				    });
 
-				    FB.api("/uid/picture?width=200&redirect=0&type=normal&height=200", function (response) {
+				    FB.api("/me/picture?width=200&redirect=0&type=normal&height=200", function (response) {
 				      	if (response && !response.error) {
 				        	/* handle the result */
 				        	console.log('PIC ::', response);
 				        	$('#userPic').attr('src', response.data.url);
-				        	alert(response.name);
+				        	alert(response);
 				      	}
 				    });
 
